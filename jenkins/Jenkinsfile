@@ -1,7 +1,7 @@
 pipeline {
     agent {
     node {
-        label 'host'
+        label 'slave1'
     }
  
 }
@@ -30,7 +30,7 @@ tools {
         stage('build') {
             steps {
                  dir('simple-java-maven-app'){
-                    sh("mvn clean")
+                    sh("mvn clean build")
                  }
             }
         }
