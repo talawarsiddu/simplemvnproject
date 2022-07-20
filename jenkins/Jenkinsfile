@@ -30,7 +30,7 @@ tools {
         stage('build') {
             steps {
                  dir('simple-java-maven-app'){
-                    sh("mvn clean install")
+                    sh("mvn clean")
                  }
             }
         }
