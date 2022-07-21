@@ -16,11 +16,6 @@ tools {
                 deleteDir()
             }
         }
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
         stage('clone repo') {
             steps {
                 echo 'Clone repo'
